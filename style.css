@@ -40,7 +40,10 @@
     margin:0;
     padding: 0px;
 }
-li, h3 {
+.title-todo {
+    list-style:none;
+}
+.item {
     list-style:none;
 }
 input,button{
