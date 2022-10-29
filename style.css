@@ -97,7 +97,7 @@
 }
 
 /* New Task */
-input#new-task {
+#new-task {
     width: 318px;
 }
 
