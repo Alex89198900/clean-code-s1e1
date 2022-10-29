@@ -121,7 +121,7 @@
     width: 226px;
 }
 
-button.delete img {
+.remove-img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
