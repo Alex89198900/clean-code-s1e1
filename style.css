@@ -123,7 +123,7 @@
 
 .remove-img {
     height: 2em;
-    transform: rotateZ(45deg);
+    transform: rotate(45deg);
     transition: transform 200ms ease-in;
 }
 .remove-img:hover {
