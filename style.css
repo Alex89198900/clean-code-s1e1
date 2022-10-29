@@ -49,9 +49,7 @@
     margin: 0;
     text-transform: uppercase;
 }
-.item {
-    list-style:none;
-}
+
 .inp{
     outline:none;
 }
@@ -102,7 +100,8 @@
 }
 
 /* Task list */
-li {
+.item {
+    list-style:none;
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -110,10 +109,9 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-li > * {
     vertical-align: middle;
 }
+
 
 li > input[type="checkbox"] {
     margin: 0 10px;
