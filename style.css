@@ -139,7 +139,9 @@
 
 /* Completed */
 
-.line {
+
+
+.editMode-dellll{
     text-decoration: line-through;
     color: #888;
 }

@@ -35,7 +35,7 @@ var createNewTaskElement=function(taskString){
 
     label.innerText=taskString;
     label.className='task';
-
+    
     //Each elements, needs appending
     checkBox.type="checkbox";
     checkBox.className='inp check'
@@ -96,15 +96,17 @@ var editTask=function(){
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
+        
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
+        
     }
 
     //toggle .editmode on the parent.
     listItem.classList.toggle("editmode");
     editInput.classList.toggle("editmode-inp");
-    label.classList.toggle("editMode-del");
+    
 };
 
 
@@ -123,12 +125,13 @@ var deleteTask=function(){
 //Mark task completed
 var taskCompleted=function(){
     console.log("Complete Task...");
-
+    
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    var label=listItem.querySelector("label");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
-
+    label.classList.toggle("editMode-dellll");
 }
 
 
@@ -138,8 +141,10 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    var label=listItem.querySelector("label");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
+    label.classList.remove("editMode-dellll");
 }
 
 
